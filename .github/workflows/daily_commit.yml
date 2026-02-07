@@ -2,7 +2,8 @@ name: Daily Auto Commit
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs every day at midnight UTC
+    # Run at the beginning of every 6th hour (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
   workflow_dispatch: # Allows you to run it manually for testing
 
 jobs:
