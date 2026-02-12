@@ -1,5 +1,7 @@
 name: Daily Auto Commit
-
+run: |
+    git config user.name "Furqan"
+    git config user.email "mohammedfurqan09@gmail.com"
 on:
   schedule:
     # Run at the beginning of every 6th hour (00:00, 06:00, 12:00, 18:00 UTC)
